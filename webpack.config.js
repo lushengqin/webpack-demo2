@@ -39,11 +39,6 @@ module.exports = {
         contentBase: './dist',
     },
 
-    module: {
-        rules: [
-          
-        ],
-      },
 };
 
 
