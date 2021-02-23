@@ -1,1 +1,2 @@
-export default 'xxx'
+import './style.css';
+export default 'xxx';
