@@ -26,6 +26,14 @@ module.exports = {
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
+                test: /\.less$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "less-loader",
+                ],
+            },
+            {
                 test: /\.scss$/i,
                 use: [
                     "style-loader",
@@ -38,7 +46,6 @@ module.exports = {
     devServer: {
         contentBase: './dist',
     },
-
 };
 
 
