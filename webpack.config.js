@@ -21,15 +21,29 @@ module.exports = {
     ],
     module: {
         rules: [
-        {
+            {
             test: /\.css$/i,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
-        },
+            },
+            {
+                test: /\.scss$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
+                ],
+            },
         ],
     },
     devServer: {
         contentBase: './dist',
     },
+
+    module: {
+        rules: [
+          
+        ],
+      },
 };
 
 
