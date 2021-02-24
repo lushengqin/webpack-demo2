@@ -3,14 +3,14 @@ console.log('我是index.js文件')
 console.log(x)
 // import lanjiazai from './lanjiazai.js'
 
-import png from './assets/01.png' //引入图片
-console.log(png)
+// import png from './assets/01.png' //引入图片
+// console.log(png)
 
 const div = document.querySelector('#app')
 
-div.innerHTML = `
-    <img src = '${png}'/>
-`
+// div.innerHTML = `
+//     <img src = '${png}'/>
+// `
 
 const button = document.createElement('button')
 button.innerText = '懒加载按钮'
